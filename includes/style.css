@@ -1,0 +1,114 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top: 2px solid #2A4F6F;
+}
+#header {
+	border-top: 1px solid #778899;
+	border-bottom: 1px dotted #B2BCC6;
+	background-color: #CDEAEA;
+	/*height:150px;*/
+}
+#header .slogan {
+	font: 120% Georgia, "Times New Roman", Times, serif;
+	color: #778899;
+	background-color: transparent;
+	float: right;
+	width: 300px;
+	text-align:right;
+	margin-right: 2em;
+	margin-top: 0.5em;
+}
+#header .logo {
+	float: left;
+	width: 95%;
+	margin-left: 1.5em;
+	margin-top: 0.5em;
+}
+#nav {
+	position: absolute;
+	/*float: left;*/
+	top: 18em;
+	left: 1em;
+	width: 14em;
+	background-color: #EAEABB;
+}
+#nav ul {
+	list-style: none;
+	margin-left: 1em;
+	padding-left: 0;
+}
+#nav li {
+	font-size: 90%;
+	border-bottom: 1px dotted #B2BCC6;
+	margin-bottom: 0.3em;
+}
+#nav a:link, #nav a:visited {
+	text-decoration: none;
+	color: #2A4F6F;
+	background-color: transparent;
+}
+#nav a:hover {
+	color: #778899;
+}
+#nav h2 {
+	font: 110% Georgia, "Times New Roman", Times, serif;
+	color: #2A4F6F;
+	background-color: transparent;
+	border-bottom: 1px dotted #cccccc;
+}
+#content {       
+	background-color: #FFFFC1;
+	margin-left: 16em;
+	margin-right: 1em;
+	text-align: justify;
+}
+
+h1 {
+	font: 150% Georgia, "Times New Roman", Times, serif;
+}
+blockquote {
+	font: 70% Georgia, "Times New Roman", Times, serif;
+	text-align: right;
+}
+h3 {
+	font: 120% Georgia, "Times New Roman", Times, serif;
+}
+ol li {
+	font-size: 90%;
+	
+}
+#content p, form {
+	font-size: 90%;
+	line-height: 1.6em; 
+	padding-left: 1.2em;
+}
+#footer{
+	clear: both;
+	text-align: center;
+	border-top: 1px dotted #B2BCC6;
+	margin-top: 10px;
+	font: 90% Georgia, "Times New Roman", Times, serif;
+	color: #2A4F6F;
+	/* background-color: transparent;*/
+	background-color: #C0C0C0;
+}
+
+textarea {  
+	/* width:450px; Ширина для окна textarea. А в коде HTML тогда убрать cols */
+	/* height:168px; Выстота для окна textarea. А в коде HTML тогда убрать rows */ 
+	resize:none; /*запрещает менять размер textarea с помощью растягивания края поля мышью*/
+	overflow: auto; /*Сделает полосу прокрутки, если впишут текста более, чем заданный размер окна textarea*/
+}
+
+input:focus, textarea:focus {  /* делает поля(ввода данных,ввода пароля,текстов.обл.)при щелчке на них, другими- по заданным хар-кам */
+	/* font:12px verdana,sans-serif; */
+	/* border:2px solid #FF2D30;  */
+	 background:none; background-color:#DEDEDE; /*Т.е. с-вом none сначала отменяем фон вообще, а далее говорим, чтоб был белым!*/
+	/* line-height:27px;  Для браузера IE, чтобы он по центру писал текст в поле input. 27px т.к. высота нашего поля input=27рх(height:27px;)*/
+	/* padding:0px 0px 0px 5px; При установлении курсора в окошко,будет идти отступ от него слева на 5px, при этом само окошко input будет тоже чуть удлиняться. Чтобы окошко при выделении(щелчке) не выделялось и оставалось такого же размера,- внутренние отступы все должны быть по нулям (padding:0px)*/
+   /* overflow: auto;  Сделает полосу прокрутки, если впишут текста более, чем заданный размер окна textarea. Для input это не актуально, т.к.у нас на ввод ограничение символов*/
+}

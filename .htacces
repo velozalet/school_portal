@@ -1,0 +1,5 @@
+# Конфигур,файл настройки сервера Apache
+Options Indexes FollowSymLinks
+DirectoryIndex index.php
+
+php_flag asp_tags on
